@@ -6,6 +6,7 @@ import Contact from "./Contact/Contact";
 import SignUp from "./Signup/Signup";
 import Blogs from "./Blogs/Blog";
 import Single from "./Single/Single";
+import Login from "./Signup/Login/Login";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/register" element={<SignUp/>}></Route>
         <Route path="/blogs" element={<Blogs/>}></Route>
         <Route path="/blogs/:id" element={<Single />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Layout>
   );

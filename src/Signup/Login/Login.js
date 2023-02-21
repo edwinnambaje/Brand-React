@@ -1,18 +1,9 @@
-import "./Signup.css";
-import { Link } from 'react-router-dom';
-function SignUp() {
+import "../Signup.css";
+function Login() {
   return (
     <div className="main">
       <form id="form_login" method="post" name="form">
-        <label className="lab">SignUp</label>
-        <input
-          type="text"
-          id="input_email"
-          name="username"
-          placeholder="username"
-          className="username"
-        />
-        <div className="email_error"></div>
+        <label className="lab">Login</label>
         <input
           type="text"
           id="input_email"
@@ -31,11 +22,10 @@ function SignUp() {
         <div className="password_error"></div>
         <div className="form_error"></div>
         <button type="submit" className="button">
-          SignUp
+          Login
         </button>
-        <Link to={`/login`} className="btn">Login</Link>
       </form>
     </div>
   );
 }
-export default SignUp;
+export default Login;
