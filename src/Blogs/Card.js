@@ -1,5 +1,6 @@
 import './Blog.css';
-  function BlogCard ({image,title,desc}){
+import { Link } from 'react-router-dom';
+  function BlogCard ({image,title,desc,id}){
     return (
         <div className="containerc">
             <div className="box-container">
@@ -10,7 +11,7 @@ import './Blog.css';
                     <div className="content">
                         <h3>{title}</h3>
                         <p>{desc}</p>
-                        <a href="./viewblog.html" className="btn">read more</a>
+                        <Link to={`/blogs/${id}`} className="btn">read more</Link>
                     </div>
                 </div>
             </div>
