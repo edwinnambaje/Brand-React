@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
-import BlogCard from "../Blogs/Card";
 function Single(){
     const {id}=useParams();
     const [singleBlog,setSingleBlog]=useState({})
