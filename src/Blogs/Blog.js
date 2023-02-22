@@ -1,10 +1,8 @@
 import './Blog.css';
 import { useEffect ,useState} from 'react';
-import { useParams } from 'react-router';
 import BlogCard from './Card';
 import axios from 'axios';
 function Blogs(){
-    const { id } = useParams();
     const [blog ,setBlog] =useState([])
 async function GetAll(){
     

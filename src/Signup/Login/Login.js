@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../Signup.css";
 import { useState } from "react";
 import AuthService from "../../services/auth.service";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,6 +18,7 @@ function Login() {
     e.preventDefault();
     AuthService.login(email, password).then(
       () => {
+        
       })
   }
   return (

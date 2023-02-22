@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Signup.css";
 import { Link } from 'react-router-dom';
 import AuthService from "../services/auth.service";
-import Swal from 'sweetalert2'
 function SignUp() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");

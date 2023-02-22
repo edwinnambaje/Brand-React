@@ -7,7 +7,8 @@ import SignUp from "./Signup/Signup";
 import Blogs from "./Blogs/Blog";
 import Single from "./Single/Single";
 import Login from "./Signup/Login/Login";
-
+import Dashboard from "./Dashboard/Dashboard";
+import User from "./User/User";
 function App() {
   return (
     <Layout>
@@ -20,6 +21,8 @@ function App() {
         <Route path="/blogs/:id" element={<Single />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </Layout>
   );
