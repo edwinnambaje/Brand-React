@@ -19,6 +19,7 @@ function App() {
         <Route path="/blogs" element={<Blogs/>}></Route>
         <Route path="/blogs/:id" element={<Single />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </Layout>
   );
