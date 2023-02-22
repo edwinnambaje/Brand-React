@@ -23,14 +23,6 @@ function SignUp() {
     e.preventDefault();
     AuthService.register(username,email, password).then(
       () => {
-        Swal.fire(
-          'Good job!',
-          'Successfully Created an Account!',
-          'success'
-      )
-      setTimeout(()=>{
-        window.location.reload();
-        },5000)
       })
   }
   return (

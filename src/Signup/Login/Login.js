@@ -17,8 +17,6 @@ function Login() {
     e.preventDefault();
     AuthService.login(email, password).then(
       () => {
-       alert('Success')
-        window.location.reload();
       })
   }
   return (
