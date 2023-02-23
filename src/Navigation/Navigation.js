@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './navigation.css'
-function Navigation(props) {
+function Navigation() {
   return (
     <header className="header">
     <div className="logo"><span>ED</span>WIN</div>

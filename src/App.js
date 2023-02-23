@@ -21,11 +21,10 @@ function App() {
         <Route path="/blogs/:id" element={<Single />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/user" element={<User />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Layout>
   );
 }
-
 export default App;

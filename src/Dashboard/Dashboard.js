@@ -1,6 +1,7 @@
+import './Dashboard.css'
 function Dashboard(){
     return(
-        <div>
+        <div className="dashboard">
             <h1>Welcome to the admin dashboard</h1>
         </div>
     )
